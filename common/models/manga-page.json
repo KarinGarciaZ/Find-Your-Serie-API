@@ -1,0 +1,21 @@
+{
+  "name": "Manga_Page",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "caps": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

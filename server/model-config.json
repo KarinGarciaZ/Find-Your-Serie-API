@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "posgresql_ds"
+  },
+  "AccessToken": {
+    "dataSource": "posgresql_ds",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "posgresql_ds",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "posgresql_ds",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "posgresql_ds",
+    "public": false
+  },
+  "Page": {
+    "dataSource": "posgresql_ds",
+    "public": true
+  },
+  "Anime": {
+    "dataSource": "posgresql_ds",
+    "public": true
+  },
+  "Serie": {
+    "dataSource": "posgresql_ds",
+    "public": true
+  },
+  "Movie": {
+    "dataSource": "posgresql_ds",
+    "public": true
+  },
+  "Manga": {
+    "dataSource": "posgresql_ds",
+    "public": true
+  },
+  "Anime_Page": {
+    "dataSource": "posgresql_ds",
+    "public": true
+  },
+  "Serie_Page": {
+    "dataSource": "posgresql_ds",
+    "public": true
+  },
+  "Movie_Page": {
+    "dataSource": "posgresql_ds",
+    "public": true
+  },
+  "Manga_Page": {
+    "dataSource": "posgresql_ds",
+    "public": true
+  }
+}
