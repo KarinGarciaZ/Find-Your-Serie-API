@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(Movie) {
-
+module.exports = Movie => {
+  Movie.validatesUniquenessOf('name', {message: 'Esa película ya fue dada de alta.'});
 };

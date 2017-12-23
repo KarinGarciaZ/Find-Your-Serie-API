@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(Page) {
-
+module.exports = Page => {
+  Page.validatesUniquenessOf('name', {message: 'Ese manga ya fue dado de alta.'});
 };
