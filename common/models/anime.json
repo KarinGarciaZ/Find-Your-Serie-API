@@ -20,7 +20,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "anime_page": {
+      "type": "hasMany",
+      "model": "Anime_Page",
+      "foreignKey": "animeId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

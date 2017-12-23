@@ -21,12 +21,36 @@
     },
     "image": {
       "type": "string",
-      "required": true,
-      "default": 0
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "anime_page": {
+      "type": "hasMany",
+      "model": "Anime_Page",
+      "foreignKey": "pageId"
+    },
+    "serie_page": {
+      "type": "hasMany",
+      "model": "Serie_Page",
+      "foreignKey": "pageId"
+    },
+    "movie_page": {
+      "type": "hasMany",
+      "model": "Movie_Page",
+      "foreignKey": "pageId"
+    },
+    "manga_page": {
+      "type": "hasMany",
+      "model": "Manga_Page",
+      "foreignKey": "pageId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

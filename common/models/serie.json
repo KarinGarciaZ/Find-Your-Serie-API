@@ -20,7 +20,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "serie_page": {
+      "type": "hasMany",
+      "model": "Serie_Page",
+      "foreignKey": "serieId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

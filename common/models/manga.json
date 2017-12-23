@@ -20,7 +20,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "manga_page": {
+      "type": "hasMany",
+      "model": "Manga_Page",
+      "foreignKey": "mangaId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

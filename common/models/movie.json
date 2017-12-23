@@ -20,7 +20,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "movie_page": {
+      "type": "hasMany",
+      "model": "Movie_Page",
+      "foreignKey": "movieId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -15,7 +15,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "page": {
+      "type": "belongsTo",
+      "model": "Page",
+      "foreignKey": ""
+    },
+    "manga": {
+      "type": "belongsTo",
+      "model": "Manga",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
